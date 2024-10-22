@@ -32,6 +32,9 @@ Neste modo, o ESP32 se conecta à rede local de um roteador. Você poderá acess
 - **I2S_WS**: Word Select
 - **I2S_SCK**: Serial Clock
 - **I2S_SD**: Serial Data
+  
+## Cancelamento de Ruído
+Para a implementação da estratégia de cancelamento de ruído, foram consideradas várias abordagens, optando-se inicialmente pela subtração espectral devido à complexidade das demais técnicas. Essa abordagem utiliza duas amostras de áudio: uma captada no ambiente interno da máquina e outra no ambiente externo. A amostra externa captura principalmente o ruído ambiental, enquanto a interna, mais próxima da máquina, registra melhor o som do seu funcionamento. A subtração entre as amostras resulta em um sinal sonoro com o ruído reduzido.
 
 ## Como Usar
 1. Escolha a configuração de rede desejada (AP ou STA).
