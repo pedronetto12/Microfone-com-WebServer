@@ -12,7 +12,7 @@ Neste modo, o ESP32 se conecta à rede local de um roteador. Você poderá acess
 ## Ligações
 
 ```
-   Módulo SD                   ESP32                     Mic INMP441
+  Módulo SD                       ESP32                      Mic INMP441
    ________                   _____________                   _________
   |     CS |-----------------|(5)      (15)|-----------------| I2S_WS  |
   |   MOSI |-----------------|(23)      (2)|-----------------| I2S_SCK |
@@ -28,6 +28,9 @@ Neste modo, o ESP32 se conecta à rede local de um roteador. Você poderá acess
 - **MISO**: Master In Slave Out do módulo SD
 - **GND**: Terra
 - **Vcc**: Alimentação
+- **I2S_WS**: Word Select
+- **I2S_SCK**: Serial Clock
+- **I2S_SD**: Serial Data
 
 ## Como Usar
 1. Escolha a configuração de rede desejada (AP ou STA).
