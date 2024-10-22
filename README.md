@@ -1,5 +1,6 @@
 
 # Projeto ESP32 - Servidor Web
+O monitoramento de sinais sonoros é uma técnica amplamente utilizada nos processos industriais para avaliar o desempenho de máquinas e equipamentos, servindo como base para o diagnóstico de possíveis falhas. A captura precisa de sons e a eliminação de ruídos indesejados são etapas cruciais para assegurar a qualidade dos dados coletados, facilitando futuras análises e manutenção preditiva. Este trabalho se concentra no desenvolvimento de um sistema que utiliza microcontroladores e sensores de baixo custo para a captação de amostras de áudio e a implementação de estratégias de cancelamento de ruído, visando melhorar a clareza dos sinais sonoros captados em ambientes industriais.
 ![Dispositivo](https://github.com/pedronetto12/Microfone-com-WebServer/blob/main/dispositivo.jpg)
 Este projeto contém dois programas que configuram um servidor web para controlar um dispositivo ESP32. Dependendo de sua aplicação, você pode optar por uma das seguintes configurações de rede:
 
