@@ -83,9 +83,9 @@ void setup(void)
   
   Serial.println("HTTP server started");
   
-  xTaskCreatePinnedToCore(grava,"tarefa_grava",1024 * 4, NULL, 1, NULL, 0);
-  delay(500);
-  xTaskCreatePinnedToCore(web,"tarefa_web",1024 * 4, NULL, 2, NULL, 1);
+  xTaskCreatePinnedToCore(grava,"tarefa_grava",1024 * 4, NULL, 1, NULL, 1);
+  delay(100);
+  xTaskCreatePinnedToCore(web,"tarefa_web",1024 * 4, NULL, 2, NULL, 0);
 }
 
 /*********  LOOP  **********/
